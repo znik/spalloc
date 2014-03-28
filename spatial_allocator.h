@@ -13,6 +13,11 @@
 
 #include <map>
 
+#ifdef __linux__
+#include <stdlib.h>
+#include <memory.h>
+#define override
+#endif
 
 static const void* ASK_POINTER_AFTER_FINALIZE = (void*)-1;
 
